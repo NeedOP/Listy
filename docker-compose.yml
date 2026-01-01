@@ -1,3 +1,4 @@
+version: "3"
 services:
   postgres:
     image: postgres:16
@@ -10,7 +11,7 @@ services:
       POSTGRES_USER: appuser
       POSTGRES_PASSWORD: secret
     volumes:
-      - postgres_data:/var/lib/postgresql/data
+      - listy_postgres_data:/var/lib/postgresql/data
 
 volumes:
-  postgres_data:
+  listy_postgres_data:
